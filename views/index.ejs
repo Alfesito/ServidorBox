@@ -1,11 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Escuela Boxeo Osuna</title>
+    <link rel="icon" href="public/images/icono_logo.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Import bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    >
+    <!-- Import tipografía -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/public/stylesheets/style.css"/>
   </head>
+
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header>
+      <div class="cover d-flex justify-content-center align-items-center flex-column">
+        <h1>Escuela Boxeo Osuna</h1>
+        <p>
+          La mejor escuela de boxeo en Leganés
+        </p>
+        <button type="button" class="btn btn-outline-light btn-sm">Conocer más</button>
+      </div>
+    </header>
+
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div
+                class="cover cover-small"
+                style="background-image:url(/public/images/imag1.jpg)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">Entrenamientos</h5>
+                <p class="card-text">
+                  Aquí va una explicación sobre el tema.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <a href="#" class="btn btn-dark btn-sm">Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div
+                class="cover cover-small"
+                style="background-image:url(/public/images/horario.jpg)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">Horarios</h5>
+                <p class="card-text">
+                  Aquí va una explicación sobre el tema.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <a href="#" class="btn btn-dark btn-sm">Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div
+                class="cover cover-small"
+                style="background-image:url(/public/images/logo_basico.jpg)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">Precios</h5>
+                <p class="card-text">
+                  Aquí va una explicación sobre el tema.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <a href="#" class="btn btn-dark btn-sm">Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div
+                class="cover cover-small"
+                style="background-image:url(/public/images/imag3.jpg)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">Normas</h5>
+                <p class="card-text">
+                  Aquí va una explicación sobre el tema.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <a href="views/normas.html" class="btn btn-dark btn-sm">Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="map d-flex justify-content-center align-items-center flex-column">
+      <div class="container mt-5 mb-5">
+        <h3>¡Estamos aquí!</h3>
+        <p> Av. Rey Juan Carlos I, 17, 28915 Leganés, Madrid 28915 Leganés. 
+            Muy cerca del metro Julián Besteiro.</p>
+        <div class="responsive-iframe text-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.6645798657314!2d-3.7537376592491163!3d40.33538157344581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189f0a22f381b%3A0x654331b6f9ca3510!2sParroquia%20Virgen%20Madre!5e0!3m2!1ses!2ses!4v1624002120789!5m2!1ses!2ses" 
+                  width="600" 
+                  height="400" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    
+    </div>
+    </section>
+
+    <footer>
+      <small>
+        <div class="foot justify-content-center">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <h3>¡Siguenos en las redes sociales!</h3>
+              <div class="redes-container">
+                <ul>
+                  <li class="facebook">
+                    <a href="https://es-es.facebook.com/AitorOsunaBoxingSchool/"><img src="/public/images/facebook_logo.png"><img/></a>
+                  </li>
+                  <li class="instagram">
+                    <a href="https://www.instagram.com/osunaboxingschool/?hl=es"><img src="/public/images/instagram_logo.png"><img/></a>
+                  </li>
+                  <li class="whatsapp">
+                    <a href="#"><img src="/public/images/whatsapp_logo.png"><img/></a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </small>
+    </footer>
+    
   </body>
 </html>
